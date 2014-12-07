@@ -25,8 +25,7 @@
 1934 => ‘It Happened One Night’ 
 1939 => ‘Gone with the Wind’ 
 1943 => ‘Casablanca’
-}
-      </pre>
+}</pre>
   
     <p>
       A quick call to best_picture(1943) will let us know that Casablanca was the winning picture that year. It’s important to note that keys don’t have to be numbers, they can be strings too! You could, for example, map colors to planet names or husbands to wives, or basically any unique key value to anything else you can think of!
@@ -38,12 +37,11 @@
 
     <pre class="CodeSample">
       finishers {
-0 => Fred
-1 => Joe
-2 => Rebecca
-3 => Sam
-}
-    </pre>
+0 => 'Fred'
+1 => 'Joe'
+2 => 'Rebecca'
+3 => 'Sam'
+}</pre>
 
     <p>
       Just query finishers(2) to find out that Rebecca is the second runner-up in the race. This is a rather useful format, as there are many instances of lists where it is convenient to be able to find an object by its place on the list…
@@ -54,8 +52,7 @@
     </p>
 
    <pre class="CodeSample">
-finishers_arr = [‘Fred’, ‘Joe’, ‘Rebecca’, ‘Sam’]
-    </pre>
+finishers_arr = [‘Fred’, ‘Joe’, ‘Rebecca’, ‘Sam’]</pre>
 
     <p>
       Like with our finishers hash, if we ask our array to tell us who the second runner-up was by querying finishers_arr(2) we get Rebecca!
