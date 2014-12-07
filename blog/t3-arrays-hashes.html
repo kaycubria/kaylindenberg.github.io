@@ -25,7 +25,8 @@
 1934 => ‘It Happened One Night’ 
 1939 => ‘Gone with the Wind’ 
 1943 => ‘Casablanca’
-}</pre>
+}
+      </pre>
   
     <p>
       A quick call to best_picture(1943) will let us know that Casablanca was the winning picture that year. It’s important to note that keys don’t have to be numbers, they can be strings too! You could, for example, map colors to planet names or husbands to wives, or basically any unique key value to anything else you can think of!
@@ -35,14 +36,14 @@
       What happens if we want to make a hash of finishers in a 5K race, where we have a winner, and then a first, second and third runners-up. We might have the following hash:
     </p>
 
-    <p>
+    <pre class="CodeSample">
       finishers {
 0 => Fred
 1 => Joe
 2 => Rebecca
 3 => Sam
 }
-    </p>
+    </pre>
 
     <p>
       Just query finishers(2) to find out that Rebecca is the second runner-up in the race. This is a rather useful format, as there are many instances of lists where it is convenient to be able to find an object by its place on the list…
@@ -52,9 +53,9 @@
       Which brings us to arrays! Arrays behave like hashes, but instead of explicitly assigned keys, in arrays, keys are implicitly determined by an objects place within the array, starting from 0 and counting up as you move to the right (or, if you can count down from the end of the array by starting with -1 for the last object in the array, -2 for the second to last object and so forth). The example below transforms our 5k finishers hash into an array:
     </p>
 
-    <p>
+   <pre class="CodeSample">
 finishers_arr = [‘Fred’, ‘Joe’, ‘Rebecca’, ‘Sam’]
-    </p>
+    </pre>
 
     <p>
       Like with our finishers hash, if we ask our array to tell us who the second runner-up was by querying finishers_arr(2) we get Rebecca!
