@@ -18,3 +18,13 @@ section{
 	font-size: 11px;
 }
 
+.CodeSample {
+font-family: 'Source Code Pro', monospace;
+white-space: pre-wrap;
+background-color: #f0f0f0;
+border-radius: 0.4rem;
+padding: 0.6rem;
+margin-top: 0.8rem;
+margin-bottom: 0.8rem;
+font-variant: normal;
+}
