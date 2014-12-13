@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<head>
+  <title>Kay's DevBootcamp Blog</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="../styles/default.css">
+</head>
+
+<main>
+  <h1>Grouping in Ruby</h1>
+  <h2>Explanation of the Enumerable group_by Method</h2>
+  <h4>Friday, December 12, 2014</h4>
+
+  <section>
+    <p>
+      Sometimes, situations arise when you need to create groups out of a collection of objects. This can be accomplished by using several Ruby methods, but one especially helpful method is group_by. The group_by method sends a message to the collection object it is acting upon and tells the object to group itself into a hash following parameters specified in the code block following the group_by method. If no code block is supplied, an enumerator is returned.
+    </p>
+    <pre class="CodeSample">
+print (1..15).group_by
+#=>#<Enumerator:0x0000000276ae60>
+print (1..15).group_by {|i| i%3}
+#=>{1=>[1, 4, 7, 10, 13], 2=>[2, 5, 8, 11, 14], 0=>[3, 6, 9, 12, 15]}
+    </pre>
+    <p>
+      There are a number of scenarios where group_by could be useful. One that comes to mind is in creating groups. For example, if a teacher has a class of 30 and wants to create small groups for studying, using a numbered attendance roster and the group_by method, the teacher could easily generate small groups and try out different sized groups with the class. Essentially, if the objects in a collection can be numbered, group_by allows them to easily be divided into sub-collections and accessed using any method available to the new hash they are put into.
+    </p>
+  </section>
+</main>
+
