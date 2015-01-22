@@ -1,0 +1,200 @@
+<!doctype: html>
+
+<head>
+    <title>Git Cheat Sheet</title>
+    <link rel="stylesheet" type="text/css" href="../styles/cheatsheet_style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header id="title">
+            Get Git
+        </header>
+<br>
+        <div id="names">
+                By: Kay Lindenberg & Christopher Selden
+        </div>
+        
+        <div id="explaining">
+            <p>
+                </i>Git is a version control system that lets you track and store code and changes.
+            </p>
+        </div>
+        
+        <div class="lefts">
+            <header2 id="subtitle">
+                Git Changes
+            </header2>
+            <p>
+            Git makes it easy to check edits made to code and adding changes
+            </p>
+        <table>
+    <tbody>
+    <tr>
+        <td>$ git status</td>
+        <td> => </td>
+        <td>Shows files that were added/removed/changed </td>
+        </tr>
+
+        <tr>
+            <td>$ git add(rm) [file]</td>
+            <td>=></td>
+            <td>Stages code for commit</td>
+        </tr>
+
+        <tr>
+            <td>$ git reset [file]</td>
+            <td>=></td>
+            <td>Unstages the file</td>
+        </tr>
+
+        <tr>
+            <td>$ git commit -m "[commit message about changes]"
+            </td>
+            <td>=></td>
+            <td>Adds note about the changes</td>
+        </tr>
+        </table>
+        </div>
+        
+        
+        <div class="rights">
+            <header2 id="subtitle">
+                Git Configuration
+            </header2>
+            <p>
+            Git lets you configure your information for your repositories
+            </p>
+        <table>
+            <tbody>
+                <tr>
+                    <td>$ git config --global user.name "[name]"</td>
+                    <td> => </td>
+                     <td>Automatically sets your username when you commit code </td>
+                </tr>
+
+                <tr>
+                    <td>$ git config --global user.email "[email address]"</td>
+                    <td>=></td>
+                    <td>Automatically sets your email when you commit code</td>
+                </tr>
+        </table>
+        </div>
+        
+        <div class="lefts">
+             <header2 id="subtitle">
+                Git Branches
+            </header2>
+            <p>
+                How to move through, update and delete branches
+            </p>
+                <table>
+            <tbody>
+                <tr>
+                    <td>$ git branch</td>
+                    <td> => </td>
+                     <td>Returns the branches in the respository</td>
+                </tr>
+
+                <tr>
+                    <td>$ git branch [branch-name]</td>
+                    <td>=></td>
+                    <td>Creates a new branch</td>
+                </tr>
+                
+                <tr>
+                    <td>$ git checkout [branch-name]</td>
+                    <td>=></td>
+                    <td>Switches which branch you are working on</td>
+                </tr>
+                
+                <tr>
+                    <td>$ git branch -d [branch-name]</td>
+                    <td>=></td>
+                    <td>Deletes the branch</td>
+                </tr>
+        </table>
+        </div>
+        
+        <div class="rights">
+            <header2 id="subtitle">
+                Git Repositories
+            </header2>
+             <p>
+                Create or clone a repository from a URL
+            </p>
+                <table>
+            <tbody>
+                <tr>
+                    <td>$ git init [project-name]</td>
+                    <td> => </td>
+                     <td>creates a new repository</td>
+                </tr>
+
+                <tr>
+                    <td>$ git clone [url]</td>
+                    <td>=></td>
+                    <td>Clones a repository from a GitHub URL</td>
+                </tr>
+        </table>
+        </div>
+        
+        <div class="lefts">
+            <header2 id="subtitle">
+                Git Log
+            </header2>
+            <p>
+                Look at the history of changes
+            </p>
+                <table>
+            <tbody>
+                <tr>
+                    <td>$ git log</td>
+                    <td> => </td>
+                     <td>Lists history of changes for the current branch</td>
+                </tr>
+
+                <tr>
+                    <td>$ git diff [first-branch]...[second-branch]</td>
+                    <td>=></td>
+                    <td>Shows differences between the two branches</td>
+                </tr>
+        </table>
+        </div>
+        
+        <div class="rights">
+            <header2 id="subtitle">
+                Git Sync
+            </header2>
+             <p>
+                Update your local repository
+            </p>
+                <table>
+            <tbody>
+                <tr>
+                    <td>$ git fetch [bookmark]</td>
+                    <td> => </td>
+                     <td>Takes all the changed data from the online version of the repository</td>
+                </tr>
+
+                <tr>
+                    <td>$ git merge [bookmark]/[branch]</td>
+                    <td>=></td>
+                    <td>Updates the local repository with the downloaded changes</td>
+                </tr>
+                
+                <tr>
+                    <td>$ git push [alias] [branch]</td>
+                    <td>=></td>
+                    <td>Uploads local changes to the online repository</td>
+                </tr>
+                
+                 <tr>
+                    <td>$ git pull</td>
+                    <td>=></td>
+                    <td>Downloads online updates and incorporates changes</td>
+                </tr>
+        </table>
+        </div>
+    </div>
+</body>
