@@ -111,3 +111,7 @@ width: 30%;
 .social-links ul{
     display: inline;
 }
+
+.social-links ul a{
+    color: #00547F;
+}
