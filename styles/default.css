@@ -115,3 +115,12 @@ width: 30%;
 .social-links ul a{
     color: #00547F;
 }
+
+.blog-posts h3{
+    font-size: 1em;
+}
+
+.blog-post a{
+    text-decoration: none;
+    color: #00547F;
+}
